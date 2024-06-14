@@ -1,0 +1,11 @@
+type: object
+summary: Урок
+properties:
+  title:
+    type: string
+    description: Название
+    example: Урок 1
+  description:
+    type: string
+    description: Описание
+    example: GeekBrains || День 1. Марафон финала
