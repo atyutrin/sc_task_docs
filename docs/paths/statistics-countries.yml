@@ -1,0 +1,25 @@
+get:
+  tags:
+    - statistics
+  summary: Статистика по всем странам
+  responses:
+    200:
+      content:
+        application/json:
+          schema:
+            properties:
+              countCountries:
+                type: array
+                description: собранная статистика по всем странам
+                items:
+                  type: object
+                  properties:
+                    countryCode:
+                      type: string
+                      description: Код страны
+                      example: ru
+                    count:
+                      type: integer
+                      description: количество посещений из страны
+                      example: 123
+

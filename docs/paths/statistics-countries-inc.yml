@@ -1,0 +1,19 @@
+post:
+  tags:
+    - statistics
+  summary: Обновление статистики по странам
+  requestBody:
+    content:
+      application/json:
+        schema:
+          properties:
+            countryCode:
+              type: string
+              description: Код страны
+              example: ru
+              required: true
+  responses:
+    204:
+      $ref: "../responses/204.yml"
+    422:
+      $ref: "../responses/422.yml"

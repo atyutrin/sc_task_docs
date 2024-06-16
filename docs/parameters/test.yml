@@ -1,6 +1,0 @@
-name: url
-in: query
-description: 'URL страницы, точнее: document.location.pathname'
-required: true
-schema:
-  type: string

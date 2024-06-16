@@ -3,13 +3,10 @@ info:
   title: strip chat test task
   version: 1.0.0
 tags:
-  - name: test1
-    description: description1
+  - name: statistics
+    description: Статистика по странам
 paths:
-  /tests:
-    $ref: 'paths/tests.yml'
-components:
-  securitySchemes:
-    bearerAuth:
-      type: http
-      scheme: bearer
+  /statistics/countries/inc:
+    $ref: 'paths/statistics-countries-inc.yml'
+  /statitstics/countries:
+    $ref: 'paths/statistics-countries.yml'
