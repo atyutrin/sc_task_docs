@@ -2,6 +2,9 @@ openapi: 3.0.0
 info:
   title: strip chat test task
   version: 1.0.0
+servers:
+  - url: http://locahost
+    description: Local dev server
 tags:
   - name: statistics
     description: Статистика по странам
